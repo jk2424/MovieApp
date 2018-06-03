@@ -7,25 +7,22 @@ import {
   Image,
   Text
 } from 'react-native';
-import LinearGradient from 'react-native-linear-gradient';
-
-import {ORANGE, PINK, WHITE, GREYBG} from '../../styles';
+import Services from '../services';
 
 export default class NowListItem extends Component {
 
   render() {
-    const {title} = this.props.data;
+    const {title, poster_path} = this.props.data;
     return (
       <TouchableOpacity style={styles.container}>
-        <View style={styles.wrapper}>
-          <Image style={styles.img}/>
-          <Text style={styles.title}>{title}</Text>
-        </View>
+        <Image source={{uri:`${Services.imageUrl}w500${poster_path}`}} style={styles.img}/>
+        <Text style={styles.title}>{title}</Text>
         <View style={styles.imgshadow} />
       </TouchableOpacity>
     );
   }
 }
+
 const styles = StyleSheet.create({
   container: {
     width: 140,

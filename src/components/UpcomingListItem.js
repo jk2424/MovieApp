@@ -8,18 +8,21 @@ import {
   Text
 } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
+import Services from '../services';
 
 import {ORANGE, PINK, WHITE} from '../../styles';
 
 export default class UpcomingListItem extends Component {
 
   render() {
-    const {title} = this.props.data;
+    const {title, backdrop_path} = this.props.data;
     return (
       <TouchableOpacity style={styles.container}>
-          <Image style={styles.img}/>
+        <View style={styles.wrapper}>
+          <Image source={{uri:`${Services.imageUrl}w500${backdrop_path}`}} style={styles.img}/>
           <LinearGradient colors={[ORANGE, PINK]} style={styles.overlay}/>
           <Text style={styles.title}>{title}</Text>
+        </View>
         <View style={styles.imgshadow} />
       </TouchableOpacity>
     );

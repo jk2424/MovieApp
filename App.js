@@ -1,7 +1,5 @@
 /**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
+ * Movie App Step-by-step
  */
 
 import React, { Component } from 'react';
@@ -12,28 +10,22 @@ import {
   View
 } from 'react-native';
 
-const instructions = Platform.select({
-  ios: 'Press Cmd+R to reload,\n' +
-    'Cmd+D or shake for dev menu',
-  android: 'Double tap R on your keyboard to reload,\n' +
-    'Shake or press menu button for dev menu',
-});
+import LinearGradient from 'react-native-linear-gradient';
+import {ORANGE, PINK, WHITE} from './styles'
 
-type Props = {};
+
+
 export default class App extends Component<Props> {
   render() {
     return (
-      <View style={styles.container}>
+      <LinearGradient colors={[ORANGE, PINK]} style={styles.container}>
+      <View style={styles.wrapper}>
         <Text style={styles.welcome}>
-          Welcome to React Native!
+          MOVIE APP
         </Text>
-        <Text style={styles.instructions}>
-          To get started, edit App.js
-        </Text>
-        <Text style={styles.instructions}>
-          {instructions}
-        </Text>
-      </View>
+        </View>
+        <Text style={styles.footer}>Copyright 2018</Text>
+      </LinearGradient>
     );
   }
 }
@@ -46,13 +38,28 @@ const styles = StyleSheet.create({
     backgroundColor: '#F5FCFF',
   },
   welcome: {
-    fontSize: 20,
+    fontSize: 40,
+    color: WHITE,
     textAlign: 'center',
     margin: 10,
   },
+
+  footer:{
+    fontSize: 20,
+    color: WHITE,
+    textAlign: 'center',
+    margin: 10,
+  },
+
   instructions: {
     textAlign: 'center',
     color: '#333333',
     marginBottom: 5,
   },
+
+  wrapper:{
+    flex:1,
+    justifyContent: 'center'
+  }
+
 });

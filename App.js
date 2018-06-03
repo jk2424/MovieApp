@@ -8,6 +8,9 @@ import {createStackNavigator} from 'react-navigation';
 import Welcome from './src/screens/Welcome';
 import MovieList from './src/screens/MovieList';
 
+import { YellowBox } from 'react-native';
+YellowBox.ignoreWarnings(['Warning: isMounted(...) is deprecated', 'Module RCTImageLoader']);
+
 const RootStack = createStackNavigator({
   welcome: {
     screen: Welcome,

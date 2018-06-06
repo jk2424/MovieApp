@@ -11,7 +11,7 @@ This app was built at an App-Prep event.
 * [React .55](https://facebook.github.io/react-native/docs/getting-started.html)
 
 ##### Linux
-Check out this tutorial [here](https://code.likeagirl.io/say-hello-world-using-react-native-in-linux-15955986bc44).
+Check out the tutorial to set up your React Native environment [here](https://code.likeagirl.io/say-hello-world-using-react-native-in-linux-15955986bc44).
 
 ---
 ### Project Set-Up

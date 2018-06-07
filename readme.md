@@ -8,7 +8,7 @@ This app was built at an App-Prep event.
 * [Xcode 9.4](https://itunes.apple.com/us/app/xcode/id497799835?mt=12)
 * [Node 8.11.2](https://nodejs.org/en/download/)
 * [Watchman 4.9](https://facebook.github.io/watchman/docs/install.html)
-* [React .55](https://facebook.github.io/react-native/docs/getting-started.html)
+* [React .55](https://facebook.github.io/react-native/docs/getting-started.html) / use: $ npm install -g react-native-cli
 
 ##### Linux
 Check out the tutorial to set up your React Native environment [here](https://code.likeagirl.io/say-hello-world-using-react-native-in-linux-15955986bc44).

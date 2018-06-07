@@ -17,7 +17,7 @@ Check out the tutorial to set up your React Native environment [here](https://co
 ### Project Set-Up
 *A folder for react native projects are automatically created upon initialization.
 ```sh
-$ create-react-native-app MovieApp
+$ react-native init MovieApp
 $ cd MovieApp
 $ react-native run-ios
 ```
